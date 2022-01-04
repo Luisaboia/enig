@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enigma Solar</title>
+    <style>
+      * {
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+      }
+      body {
+        background-color: black;
+        color: white;
+      }
+      .lightmode {
+        background-color: white;
+        color: black;
+      }
+      .enigmasolar {
+        text-align: center;
+        padding-bottom: 10rem;
+      }
+      #sobre {
+        font-size: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <button onclick="lightmode()">Alterar</button>
+      <h1 class="enigmasolar">Enigma Solar</h1>
+    </header>
+    <article id="sobre">
+      <p>O que é o enigma solar?</p>
+      <p style="border: 4rem">
+        O Enigma Solar foi criado com o intuito de treinar suas capacidades
+        lógicas dedutivas para resolver uma série de problemas que consistem em:
+      </p>
+    </article>
+    <script>
+      function lightmode() {
+        var element = document.body
+        element.classList.toggle('lightmode')
+      }
+    </script>
+  </body>
+</html>
